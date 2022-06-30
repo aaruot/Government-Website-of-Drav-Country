@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Application for a driver's licence</title>
+<style>
+.1{font-family:Trebuchet MS}
+aside{float:right;width:80%}
+td{font-family:Trebuchet MS}
+.img2{height:100px;width:100px}
+body{background-color:#F1C40F}
+header{background-color:white;}
+.section1{background-color:#F8F9F9;width:200px;float:left}
+.table{border:dotted}
+</style>
+<script type="text/javascript">
+function applyt()
+{
+var n,a,b;
+n=document.phorm.nom.value;
+a=parseInt(document.phorm.anyo.value);
+if(a>=18&a<70)
+{
+b=confirm("Submit your application?");
+if(b==true)
+{
+alert("Congratulations your license request was sent. Please wait 4-5 days for further contact");
+}
+else
+{
+alert("Okay, application was witheld");
+}
+window.location.reload();
+}
+else if(a>=70)
+{
+alert("By law, you are not allowed to drive anymore");
+}
+else
+{
+alert("Sorry it seems like you're nor eligible for a lisence just yet.");
+}
+}
+</script>
+</head>
+<body>
+<header>
+<table>
+<tr>
+<td><img src="B&W government logo.jpg" class="img2"></td>
+<td><h3 style="font-family:Trebuchet MS;">Gåmmeraïnt<br> du Drav</h3></td>
+<td style="color:white">hhhhhhhhhh</td>
+<td><a href="https://drive.google.com/drive/u/0/folders/1TlwnrelVPq_fb8mKjHOYdb1-W7cvilLl">Bundéshlann laws<br>Decrees el Bundéshlann</a></td>
+<td style="color:white">hhhhhhhhhh</td>
+<td><a href="home.html">Home page<br>à maine</a></td>
+<td style="color:white">hhhhhhhhhh</td>
+<td><a href="applications.html">Fresh applications<br>Applications afrue</a></td>
+<td style="color:white">hhhhhhhhhh</td>
+<td><a href="">à dravi</a></td>
+<td style="color:white">hhhhhhhhhh</td>
+<td><a href="file:///C:/Users/Aarush/OneDrive/Pictures/Drav%20website/welcomepage.html">Logout</a></td>
+</tr>
+</table>
+</header><br><br>
+<center><table class="table">
+<form name="phorm">
+<tr><td><h1 style="font-family:Dubai">Application for a Driver's license in the country of Drav</h1></td></tr>
+<tr>
+<td>
+Enter your full name :</td><td> <input ype="text" name="nom" required></td></tr><br><br>
+<tr>
+<td>Enter your mother's name : </td><td><input type="text" name="momnom"></td></tr><br><br>
+<tr>
+<td>Enter your DOB : </td><td><input ype="date" name="dob" placeholder="DD/MM/YYYY" required></td></tr><br><br>
+<tr><td>Enter your age : </td><td><input type="number" name="anyo" required></td></tr><br><br>
+<tr><td>Which state do you reside in : </td></tr>
+<tr><td><br><input type="radio" name="st"></td><td>Lahui Apana (including LAOC)<br></td></tr>
+<tr><td><input type="radio" name="st"></td><td>The State of Honua (including HOC)<br></td></tr>
+<tr><td><input type="radio" name="st"></td><td>The State of Costerio (including CSOC)</td></tr><br><br>
+<tr><td>Enter your unique citizen ID :</td><td> <input type="text" name="ucid" placeholder="BDLA40DC0053"></td></tr>
+<br><br>
+<tr></tr>
+<tr align="right"><td><input type="button" value="Process" onClick="applyt()"></td></tr>
+</form></table>
+</body>
+</html>
+
+
